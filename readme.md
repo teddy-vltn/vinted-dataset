@@ -1,8 +1,9 @@
 # Vinted Brands Dataset
-============================
+
+***I will add more brands to the dataset in the future.***
 
 ## Overview
---------
+-------------
 
 This dataset comprises a collection of brand names and their corresponding unique identifiers from the Vinted platform. It is structured in JSON format, offering an essential tool for developers to implement brand-specific functionalities in applications.
 
