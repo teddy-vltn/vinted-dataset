@@ -1,11 +1,11 @@
-# Vinted Brands Dataset
+# Vinted Brands, Sizes and Groups Dataset
 
 ***I will add more brands to the dataset in the future.***
 
 ## Overview
 -------------
 
-This dataset comprises a collection of brand names and their corresponding unique identifiers from the Vinted platform. It is structured in JSON format, offering an essential tool for developers to implement brand-specific functionalities in applications.
+This dataset comprises a collection of brand names, sizes and groups and their corresponding unique identifiers from the Vinted platform. It is structured in JSON format, offering an essential tool for developers to implement brand-specific functionalities in applications.
 
 ## Dataset Structure
 -----------------
@@ -14,12 +14,14 @@ The dataset is presented in a simple JSON format:
 
 ```json
 {
-  "Brand Name": "Brand ID",
+  "name": "id",
   ...
 }
 ```
 
 ### Sample Data
+
+## groups.json
 
 ```json
 {
@@ -41,6 +43,55 @@ The dataset is presented in a simple JSON format:
   "Cecil": "2749",
   "IKEA": "184302",
   "ASOS": "49",
+  ...
+}
+```
+
+## groups.json
+
+```json
+{
+  "Tailles": 4,
+  "Chaussures": 7,
+  "Soutiens-gorge": 53,
+  "Bagues": 52,
+  "Chapeaux adulte": 60,
+  "Montres": 62,
+  "Gants adulte": 61,
+  "Ceintures femme": 64,
+  "Chaussettes femme": 72,
+  "Tailles hommes": 14,
+  ...
+}
+```
+
+## sizes.json
+
+Each group has unique size identifiers which are listed in the `sizes.json` file. The sizes are grouped by their respective group identifiers.
+
+```json
+{
+  "72": {
+      "S | 35\u201338": 1517,
+      "M | 39\u201342": 1518,
+      "L | 43\u201346": 1519,
+      "Taille unique": 1521
+  },
+  "14": {
+      "XS": 206,
+      "S": 207,
+      "M": 208,
+      "L": 209,
+      "XL": 210,
+      "XXL": 211,
+      "XXXL": 212,
+      "4XL": 308,
+      "5XL": 309,
+      "6XL": 1192,
+      "7XL": 1193,
+      "8XL": 1194,
+      "Universel": 213
+  },
   ...
 }
 ```
